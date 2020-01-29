@@ -93,9 +93,23 @@ box-shadow: 0px 5px 5px 0px rgba(102,102,102,0.25);
     color: white;
 }
 
+.quick-link {
+    border: solid 1px grey;
+}
+
+.quick-link:hover {
+    text-decoration: none;
+        background-color: #EC0701;
+    color: white;
+}
+
 /*SECTION - HOME*/
 #Home_section {
     padding-top: 15px;
+}
+
+section .row {
+    padding: 1%;
 }
 
 .cube-orange {
@@ -176,18 +190,6 @@ h4 {
 /*COLORS*/
 .bg-primary {
     background-color: #EC0701 !important;
-}
-
-.container-fluid {
-}
-
-.orange {
-/*    background-color: orange;*/
-    padding: 2%;
-}
-
-.blue {
-/*    background-color: aqua;*/
 }
 
 /*
