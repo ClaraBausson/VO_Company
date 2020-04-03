@@ -1,122 +1,84 @@
 /*GLOBAL*/
-
 body {
-    background-image: url("/media/images/background.jpg");
-    background-color: cadetblue;
-    font-family: sans-serif, serif;
+    /*    background-image: url("/media/images/background.jpg");*/
+    background-color: whitesmoke;
+    font-family: 'Poppins', sans-serif;
     font-size: 12px;
+    color: #274D56;
+}
 }
 
 nav {
-    height: 75px;
+    /*    height: 75px;*/
     width: 100%;
 }
 
-.navbar {
-    border-bottom: solid 1px #EC0701;
-    font-size: 1.01em;
-    -webkit-box-shadow: 0px 5px 5px 0px rgba(102,102,102,0.25);
--moz-box-shadow: 0px 5px 5px 0px rgba(102,102,102,0.25);
-box-shadow: 0px 5px 5px 0px rgba(102,102,102,0.25);
+/*HEADERS*/
+h1 {
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #274D56;
 }
 
-.navbar-button {
-    background-color: white;
-    border: solid 3px #EC0701;
-    border-radius: 50px;
-    color: #EC0701;
-    display: inline-block;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition-duration: 0.5s;
-    transition-property: color, background-color;
+h2 {
+    font-family: 'Arvo', serif;
 }
 
-.navbar-button:hover {
-    background-color: #EC0701;
-    color: white;
+h3 {
+    font-family: 'Arvo', serif;
 }
 
-/*MEDIA QUERIES*/
-
-@media (min-width:768px) {
-    body {
-        font-size: 1.02em;
-    }
+h4 {
+    font-family: 'Arvo', serif;
+    font-size: 13px;
 }
 
-@media (min-width:992px) {
-    body {
-        font-size: 1.05em;
-    }
-    #header_logo {
-        height: 60px;
-    }
+.navbar-nav {
+    font-size: 16px;
 }
 
-@media (min-width:1200px) {
-    body { 
-        font-size: 1.1em;
-    }
+
+
+/*FONTS*/
+/*
+font-family: 'Stardos Stencil', cursive;
+font-family: 'Creepster', cursive;
+font-family: 'Varela Round', sans-serif;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Arvo', serif;
+
+
+font-family: 'Poppins', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Quicksand', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Barlow', sans-serif;
+font-family: 'Tinos', serif;
+*/
+
+.height-100 {
+    height: 200px;
 }
 
-/*FOOTER*/
-
-.page-footer {
-    border-top: solid 1px #EC0701;
-    padding: 0;
-}
-
-.footer-copyright {
-    font-size: 12px;
-    padding: 20px;
-}
-
-.footer-button {
-    background-color: white;
-    border: solid 3px #EC0701;
-    border-radius: 50px;
-    color: #EC0701;
-    display: inline-block;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 10px 20px;
-    transition-duration: 0.5s;
-    transition-property: color, background-color;
-}
-
-.footer-button:hover {
-    background-color: #EC0701;
-    color: white;
-}
-
-.quick-link {
-    border: solid 1px grey;
-}
-
-.quick-link:hover {
-    text-decoration: none;
-        background-color: #EC0701;
-    color: white;
-}
-
-/*SECTION - HOME*/
-#Home_section {
-    padding-top: 15px;
-}
+/*HOME*/
 
 section .row {
     padding: 1%;
 }
 
 .cube-orange {
+    height: inherit;
     padding: 20px 20px;
     text-align: center;
     border: 2px solid #EC0701;
     background-color: white;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+}
+
+.cube-orange h1 {
+    color: #274D56;
     transition-duration: 0.5s;
     transition-property: color, background-color;
 } 
@@ -126,80 +88,314 @@ section .row {
     color: white;
 }
 
-/*
-.navbar-toggler {
-    height: 30px;
-    width: 35px;
+.cube-orange:hover h1 {
+    color: white;
 }
 
-.navbar-toggler-icon {
-    height: 25px;
-    width: 30px;
-    padding: 0;
-}
-*/
+.cube-blue {
+    height: inherit;
+    padding: 20px 20px;
+    text-align: center;
+    border: 2px solid #274D56;
+    background-color: white;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+} 
 
-/*HEADERS*/
-h1 {
-    font-family: 'Cuprum', sans-serif;
-    font-size: 1.1em;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    border-bottom: 1px solid #EC0701;
-    padding-bottom: 10px;
-}
+.cube-blue h1 {
+    color: #EC0701;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+} 
 
-h2 {
-    font-family: 'Cuprum', sans-serif;
-    font-size: 1.08em;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+.cube-blue:hover {
+    background-color: #274D56;
+    color: white;
 }
 
-h3 {
-    font-family: 'Cuprum', sans-serif;
-    font-size: 1.05em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+.cube-blue:hover h1 {
+    color: white;
+}
+
+.cube-blue:hover .content-button {
+    border: solid 1px white;
+    background-color: white;
+    color: #274D56;
+}
+
+.cube-orange:hover .content-button {
+    border: solid 1px white;
+    background-color: white;
     color: #EC0701;
 }
 
-h4 {
-    
+.content-button {
+    border-radius: 50px;
+    text-transform: uppercase;
+    width: 60%;
+    font-weight: 500;
 }
 
-/*LOGOS*/
-#header_logo {
-    height: 50px;
+.cube-blue .content-button {
+    background-color: white;
+    border: solid 1px #EC0701;
+    color: #EC0701;
 }
 
-#footer_logo {
-    height: 40px;
+.cube-orange .content-button {
+    background-color: white;
+    border: solid 1px #274D56;
+    color: #274D56;
+}
+
+/*COLORS*/
+.bg-primary {
+    background-color: #EC0701 !important;
+    color: white;
+}
+
+.bg-secondary {
+    background-color: #274D56 !important;
+    color: white;
+}
+
+/*FOOTER*/
+
+.page-footer {
+    border-top: solid 2px #1D3A40;
+    margin: 0;
+}
+
+.footer-copyright {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.footer-button {
+    background-color: #EC0701;
+    border: solid 1px white;
+    border-radius: 50px;
+    color: #EC0701;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+}
+
+.footer-button:hover {
+    background-color: white;
+    color: #EC0701;
+}
+
+.quick-link {
+    border: solid 1px white;
+    color: #274D56;
+    background-color: white;
+    font-weight: 900;
+    border-radius: 50px;
+    width: 20%;
+    text-align: center;
+    padding: 5px;
+    margin: 3px;
+    display: inline-block;
+    transition-duration: 0.5s;
+    transition-property: color, background-color;
+}
+
+.quick-link:hover {
+    text-decoration: none;
+    background-color: #274D56;
+    color: white;
+    font-weight: 900;
 }
 
 .footer-icon svg {
     height: 30px;
     width: 30px;
     font-size: 30px;
-    color: #EC0701;
-    background-color: white;
+    color: white;
+/*    background-color: #EC0701;*/
     padding-top: 0;
 }
 
-/*COLORS*/
-.bg-primary {
-    background-color: #EC0701 !important;
+
+
+/* ================= Clients ==================== */
+.clients-grid .border-box {
+    border: 1px solid #eee;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    -webkit-transition: box-shadow 0.3s;
+    -moz-transition: box-shadow 0.3s;
+    -ms-transition: box-shadow 0.3s;
+    transition: box-shadow 0.3s;
 }
 
-/*
-.separator-orange {
-/*    border-top: solid 2px #EC0701;
+.clients-grid .border-box a{
     display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    padding: 0;
-}*/
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.clients-grid .border-box img {
+    padding: 30px 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    -webkit-filter: grayscale(100%); /* Chrome, Safari, Opera */
+    filter: grayscale(100%);
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.clients-grid .border-box img:hover {
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+}
+
+.clients-grid .border-box:hover{
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+
+
+/*CAROUSEL TEST*/
+/*
+    code by Iatek LLC 2018 - CC 2.0 License - Attribution required
+    code customized by Azmind.com
+*/
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Show 4th slide on md if col-md-4*/
+    .carousel-inner .active.col-md-4.carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -33.3333%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+    /* Show 3rd slide on sm if col-sm-6*/
+    .carousel-inner .active.col-sm-6.carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -50%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+}
+@media (min-width: 576px) {
+    .carousel-item {
+        margin-right: 0;
+    }
+    /* show 2 items */
+    .carousel-inner .active + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .active.carousel-item-left + .carousel-item-next.carousel-item-left,
+    .carousel-item-next.carousel-item-left + .carousel-item,
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* farthest right hidden item must be also positioned for animations */
+    .carousel-inner .carousel-item-prev.carousel-item-right {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .active.carousel-item-right + .carousel-item-prev.carousel-item-right,
+    .carousel-item-prev.carousel-item-right + .carousel-item,
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* MD */
+@media (min-width: 768px) {
+    /* show 3rd of 3 item slide */
+    .carousel-inner .active + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    .carousel-inner .carousel-item-next {
+        position: relative;
+        transform: translate3d(0, 0, 0);
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+/* LG */
+@media (min-width: 991px) {
+    /* show 4th item */
+    .carousel-inner .active + .carousel-item + .carousel-item + .carousel-item {
+        display: block;
+    }
+    .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left) + .carousel-item + .carousel-item + .carousel-item {
+        transition: none;
+    }
+    /* Show 5th slide on lg if col-lg-3 */
+    .carousel-inner .active.col-lg-3.carousel-item + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: absolute;
+        top: 0;
+        right: -25%;  /*change this with javascript in the future*/
+        z-index: -1;
+        display: block;
+        visibility: visible;
+    }
+    /* left or forward direction */
+    .carousel-item-next.carousel-item-left + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(-100%, 0, 0);
+        visibility: visible;
+    }
+    /* right or prev direction //t - previous slide direction last item animation fix */
+    .carousel-item-prev.carousel-item-right + .carousel-item + .carousel-item + .carousel-item + .carousel-item {
+        position: relative;
+        transform: translate3d(100%, 0, 0);
+        visibility: visible;
+        display: block;
+        visibility: visible;
+    }
+}
+
+
+
 
 
