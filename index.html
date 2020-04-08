@@ -29,9 +29,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
         <a class="navbar-brand" href="#">
-            <img src="/media/logos/logo.PNG" width="40" height="40" class="d-inline-block align-center" alt="">
+            <img src="media/logo/medium_blue_round.png" width="40" height="40" class="d-inline-block align-center" alt="">
             <h1 class="d-inline-block align-center">ChatterBox Voices</h1>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,9 +46,10 @@
                         <span class="sr-only">(current)</span>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Voice Over</a>
-                        <a class="dropdown-item" href="#">Localisation</a>
+                        <a class="dropdown-item" href="#">Voice-over</a>
+                        <a class="dropdown-item" href="#">Audio Project Management</a>
                         <a class="dropdown-item" href="#">Video Production</a>
+                        <a class="dropdown-item" href="#">Workshops</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Studio Hire</a>
                     </div>
@@ -76,6 +77,9 @@
                     </div>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link" href="#" tabindex="-1">Podcast</a>
+                </li>
+                <li class="nav-item">
                     <a class="nav-link" href="#" tabindex="-1">Contact Us</a>
                 </li>
             </ul>
@@ -86,9 +90,9 @@
     </nav>
 
     <section id="Section_Intro" class="container-fluid">
-        <div class="row">
-            <div class="col-12 col-lg-3 orange">
-                <div class="cube-orange">
+        <div id="Row_1" class="row">
+            <div id="cube-service" class="col-12 col-lg-3">
+                <div class="cube-blue">
                     <h1>Welcome</h1>
                     <p>ChatterBox Voices Ltd is a thriving boutique-sized agency which specializes in professional UK and International Voice Talent at highly competitive prices and quick turn around times.</p>
                     <p>We also offer Translation, Transcription and Subtitling Services.</p>
@@ -97,25 +101,27 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-9 blue">
+            <div id="slideshow" class="col-12 col-lg-9">
                 <h1 class="text-center">OUR SERVICES</h1>
                 <div class="row">
                     <div class="col-12">
                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                            <!--
                             <ol class="carousel-indicators">
                                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                             </ol>
+-->
                             <div class="carousel-inner height-100">
                                 <div class="carousel-item active">
-                                    <img src="/media/images/homescroll_1.jpg" class="d-block w-100" alt="...">
+                                    <img src="/media/slideshow/1.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="/media/images/homescroll_2.jpg" class="d-block w-100" alt="...">
+                                    <img src="/media/slideshow/2.jpg" class="d-block w-100" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="/media/images/homescroll_3.jpg" class="d-block w-100" alt="...">
+                                    <img src="/media/slideshow/3.jpg" class="d-block w-100" alt="...">
                                 </div>
                             </div>
                             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -134,8 +140,8 @@
     </section>
     <section id="Section_Voices" class="container-fluid">
         <div id="Row_2" class="row">
-            <div class="col-12 col-lg-3 orange">
-                <div class="cube-blue">
+            <div class="col-12 col-lg-3">
+                <div class="cube-orange">
                     <h1>Voices from around the world...</h1>
                     <p>English, Ethnic, European, Effervescent, Eloquent or Exotic - whatever your requirements we'll help you find that Excellent Voice which fits your brief.</p>
                     <p>With our pool of over 600 professional voices from more than 75 languages, our collective CV is quite something to boast about! And with a combined playing age of 5-105 you'll be spoilt for choice!</p>
@@ -143,7 +149,7 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-9 blue">
+            <div class="col-12 col-lg-9">
                 <h1 class="text-center">OUR VOICES</h1>
                 <div class="row">
                     <div class="container-fluid">
@@ -190,15 +196,15 @@
     </section>
     <section id="Section_Clients" class="container-fluid">
         <div id="Row_3" class="row">
-            <div class="col-12 col-lg-3 orange">
-                <div class="cube-orange">
+            <div class="col-12 col-lg-3">
+                <div class="cube-blue">
                     <h1>- and clients too!</h1>
                     <p>Our Client List is long and varied and ranges from corporate and commercial giants to smaller publishing houses in the UK as well as world wide.</p>
                     <button class="content-button">See our full portfolio</button>
                 </div>
             </div>
 
-            <div class="col-12 col-lg-9 blue">
+            <div class="col-12 col-lg-9">
                 <h1 class="text-center">OUR CLIENTS</h1>
                 <div class="container-fluid">
                     <div class="clients-grid grid-gutter">
@@ -206,98 +212,98 @@
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/BBC.png" alt="BBC">
+                                        <img src="/media/client/BBC.png" alt="BBC">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/BMW.png" alt="BMW">
+                                        <img src="/media/client/BMW.png" alt="BMW">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Breville.png" alt="Breville">
+                                        <img src="/media/client/Breville.png" alt="Breville">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Coca%20Cola.png" alt="Coca Cola">
+                                        <img src="/media/client/Coca%20Cola.png" alt="Coca Cola">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/H&M.png" alt="H&M">
+                                        <img src="/media/client/H&M.png" alt="H&M">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Netflix.png" alt="Netflix">
+                                        <img src="/media/client/Netflix.png" alt="Netflix">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/NHS.png" alt="NHS">
+                                        <img src="/media/client/NHS.png" alt="NHS">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Norton.png" alt="Norton">
+                                        <img src="/media/client/Norton.png" alt="Norton">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Sage.png" alt="Sage">
+                                        <img src="/media/client/Sage.png" alt="Sage">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Sky.png" alt="Sky">
+                                        <img src="/media/client/Sky.png" alt="Sky">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Smiths%20Detection.png" alt="Smiths Detection">
+                                        <img src="/media/client/Smiths%20Detection.png" alt="Smiths Detection">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Sony.png" alt="Sony">
+                                        <img src="/media/client/Sony.png" alt="Sony">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Spotify.png" alt="Spotify">
+                                        <img src="/media/client/Spotify.png" alt="Spotify">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
                             <div class="col-md-3 col-sm-6">
                                 <div class="border-box">
                                     <a href="#">
-                                        <img src="/media/images/clients/Xerox.png" alt="Xerox">
+                                        <img src="/media/client/Xerox.png" alt="Xerox">
                                     </a>
                                 </div><!-- /.border-box -->
                             </div><!-- /.col-md-3 -->
@@ -319,30 +325,35 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-12 col-md-6 p-3">
+            <div class="row p-3">
+
+                <div id="shortcuts" class="col-12 col-md-6 p-3">
                     <h3>Quick Links</h3>
                     <a class="quick-link" href="#">Female Voices</a>
                     <a class="quick-link" href="#">Male Voices</a>
                     <a class="quick-link" href="#">Young Voices</a>
                     <a class="quick-link" href="#">Studios</a>
-                    <a class="quick-link" href="#">Pricing</a>
+                    <!--<a class="quick-link" href="#">Pricing</a>-->
                     <a class="quick-link" href="#">Translation</a>
                     <a class="quick-link" href="#">Transcription</a>
                     <a class="quick-link" href="#">Subtitling</a>
+                    <a class="quick-link" href="#">Workshops</a>
                 </div>
-
-                <div class="col-12 col-md-6 p-3">
+                <div id="contact" class="col-12 col-md-6 p-3 text-right">
                     <h3>Where To Find Us</h3>
-                    <!--                    <a class="navbar-brand" href="index.html"><img id="footer_logo" src="media/logos/company_logo.png"></a>-->
                     <p>Address: ChatterBox Voices, 12 Cock Ln, Farringdon, London EC1A 9BU</p>
                     <p>Email: test@test.com</p>
                     <p>Phone: 020 3744 3558</p>
-                    <!--                    <button class="footer-button">Get directions</button>-->
+                    <!--
+                    <button onclick="showDiv()">Click Me</button>
+                    <div id="googleMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4965.557264903015!2d-0.10192796326394109!3d51.51727712858619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761b9a7734afef%3A0xfcbd0d739a376c05!2sChatterbox%20Voices%20Ltd!5e0!3m2!1sen!2suk!4v1586380138098!5m2!1sen!2suk" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                    </div>
+-->
                 </div>
             </div>
 
-            <div class="row text-center">
+            <div id="social" class="row text-center">
                 <div class="col-12">
                     <ul class="list-unstyled list-inline text-center m-0">
                         <li class="list-inline-item">
@@ -392,7 +403,7 @@
 
             </div>
 
-            <div class="col-12">
+            <div id="copyright" class="col-12">
                 <p class="footer-copyright m-0 text-center">
                     Copyright © 2013 ChatterBox Voices Ltd
                     UK Company Registration No: 7991590

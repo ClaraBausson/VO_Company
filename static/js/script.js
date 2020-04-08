@@ -1,6 +1,4 @@
-/*
-    Carousel
-*/
+//CAROUSEL
 $('#carousel-example').on('slide.bs.carousel', function (e) {
     /*
         CC 2.0 License Iatek LLC 2018 - Attribution required
@@ -23,3 +21,15 @@ $('#carousel-example').on('slide.bs.carousel', function (e) {
         }
     }
 });
+
+
+// SHOW/HIDE MAP
+
+function showDiv() {
+  var x = document.getElementById("googleMap");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
